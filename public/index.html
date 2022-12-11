@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON WEB TOKEN</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-center">
+      <h4>
+        sky<span>coding</span>
+      </h4>
+    </div>
+  </nav>
+
+  <main>
+    <form action="">
+      <h5>login/Register</h5>
+      <div class="form-row">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-input username-input"/>
+      </div>
+       <label for="password" class="form-label">password</label>
+        <input type="password" class="form-input password-input"/>
+      </div>
+      <div class="small-text form-alert">there was an error</div>
+      <button type="submit" class="btn btn-block"></button>
+    </form>
+
+    <div class="container">
+      <h4>Dashboard</h4>
+      <p class="token">no token present</p>
+      <div class="result"></div>
+      <button class="btn btn-block" id="data">
+        get data
+      </button>
+    </div>
+  </main>
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  <script type="module" src="./getElement.js"></script>
+</body>
+</html>
